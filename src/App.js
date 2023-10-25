@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import {Sastra} from './components/Sastra';
 import {Input} from './components/Input' 
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
-import {InputMobile} from './components/InputMobile'
+
+import {MyTable2} from './components/MyTable2'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -15,6 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   color: theme.palette.text.secondary,
 }));
+
 
 function App() {
   return (
@@ -42,10 +43,15 @@ function App() {
             <Input/>
           </Grid>
           <Grid xs={1}>
-            {/* <Item>nested xs=12/24</Item> */}
+            
           </Grid>
         </Grid>
-
+        
+        <Grid xs={1}/>
+        <Grid xs={22}>
+          <MyTable2/>
+        </Grid>
+        <Grid xs={1}/>
       </Grid>
     </Box>
     </div>

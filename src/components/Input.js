@@ -42,9 +42,14 @@ render(){
           <TextField id="outlined-basic" label="โตด/กลับ" variant="outlined" fullWidth />
           </Grid>
 
-          <Grid xs={18}/>
-          <Grid xs={6}>
+          <Grid xs={15}/>
+          <Grid xs={9}>
             <FormControlLabel control={<Checkbox defaultChecked />} label="3 ตัว" />
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={2} columns={24}>
+          <Grid xs={24}>
           </Grid>
         </Grid>
       </Box>
