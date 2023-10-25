@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+import {InputMobile} from './components/InputMobile'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -32,15 +33,15 @@ function App() {
           </Grid>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid xs={1}>
           {/* <Item>xs=8/24</Item> */}
         </Grid>
-        <Grid container xs={20}>
-          <Grid xs={20}>
+        <Grid container xs={23}>
+          <Grid xs={23}>
             {/* <Item>nested xs=12/24</Item> */}
             <Input/>
           </Grid>
-          <Grid xs={4}>
+          <Grid xs={1}>
             {/* <Item>nested xs=12/24</Item> */}
           </Grid>
         </Grid>
@@ -48,7 +49,6 @@ function App() {
       </Grid>
     </Box>
     </div>
-
   );
 }
 
